@@ -1,7 +1,7 @@
 # dataplatform
 
  DataHub Reference Architecture
-This reference architecture for OT DataHub Platform shows an end-to-end stream processing pipeline. This type of pipeline has four stages: ingest (Events), process (Transform, Aggregate and Enrich), store (Store Materialized Views), and analysis/reporting (Access patterns).
+This reference architecture for DataHub Platform shows an end-to-end stream processing pipeline. This type of pipeline has four stages: ingest (Events), process (Transform, Aggregate and Enrich), store (Store Materialized Views), and analysis/reporting (Access patterns).
 
 For this reference architecture, the pipeline ingests data from three sources typical databases with CDC enabled, performs a join on related records from each stream, enriches the result, and calculates an average in real time. The results are stored for further analysis.
 
@@ -16,7 +16,7 @@ The architecture consists of the following components.
 
 Data sources/System of Records: The data sources are a real application that generate events or updates to the Database and generate CDC Events
 
-Ingestion: Data Ingestion is a process where event data is streamed into Kafka Topics using CDD or collectors to get data into Stream Platform.
+Ingestion: Data Ingestion is a process where event data is streamed into Kafka Topics using CDC or collectors to get data into Stream Platform.
 
 Stream Processing: Transform, Aggregate and Enriching data based on the Standardization, Core standardized data streams are made up of SoR entities that have been CDC’d, grouped, and standardized into canonical format. They MUST contain ONLY the SoR data that comprise a single entity. Any references to other entities must be by pointer. 
 For example an Site Informaton would be a pointer from the Employee entity to the Site Information Entity.
