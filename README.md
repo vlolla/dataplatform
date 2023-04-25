@@ -70,10 +70,11 @@ For this reference architecture, the pipeline ingests data from multiple sources
 
 ## Batch Data Pipeline Reference Architecture
 
+![](https://github.com/vlolla/dataplatform/blob/main/BatchArchitecture.PNG)
 
 
-##Streaming Data Pipeline Reference Architecture
-![Reference Architecture](./img/streamingarchitecture.jpg)
+## Streaming Data Pipeline Reference Architecture
+![Reference Architecture](https://github.com/vlolla/dataplatform/blob/main/streamingarchitecture.PNG)
 
 
 Architecture Components
